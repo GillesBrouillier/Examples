@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="french">
+     <head>
+            <title>Titre</title>
+            <script language="JavaScript">
+               function affiche()
+               {
+                  var champs = document.forms.formulaire.texte.value ;
+                  alert(champs);
+               }
+            </script>
+
+     </head>
+
+     <body style : align="center">
+             <h1> Titre </h1>
+             <br><br>
+             <form method = "post" name="formulaire">
+             <input type="text" name="texte">
+             <br>
+             <input type="button" onClick="affiche()" value="appuie" >
+             </form>
+            
+     </body>
+
+</html>
