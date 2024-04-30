@@ -1,0 +1,61 @@
+
+Another example about JS recovery with boards, for loop .
+<html>
+  <head>
+      <title>Buena pizza</title>
+      <link rel="stylesheet" href="styles.css" />
+         .hh1 {
+               color: blue;
+               background-color: yellow;
+               border: 1px solid black;
+              }
+
+         .p  {
+                color: red;
+             }
+
+        .box {
+                margin: 30px;
+                width: 100px;
+                height: 100px;
+                background-color: rebeccapurple;
+                transform: rotate(0.8turn);
+               }
+
+
+
+      </link>
+      <script language="JavaScript">   
+      class Pizza
+      {
+          constructor ()
+          {
+                  let photopizza = [];
+                  let nompizza   = [];
+                  let prixpizza  = [];
+          }
+                  photopizza = ["piz1.jfif","piz2.jfif","piz3.jfif"] ;
+                  nompizza   = ["La Milanaise" , "La Parisienne" , "La Romaine"] ;
+                  prixpizza  = ["3€","5€","8€"] ;
+      }   
+      let pizza = new Pizza();
+      let tailleclspizza = pizza.photopizza.length ;
+     // console.log(pizza.photopizza.length);
+      </script>
+
+   </head>
+
+   <body>
+          <script language="JavaScript">
+              var pathphotos = "C:/Users/IB/Desktop/Pizzas/";
+              console.log(tailleclspizza);
+
+              for( let i=0 ; i<tailleclspizza ; i++)
+              {
+                  document.write("<br><h4>"+pizza.nompizza[i]+"</H4><img src="+pathphotos+ pizza.photopizza[i]+">"+"<h4>"+ pizza.prixpizza[i]+"</h4>");                                 
+              }
+          </script>
+
+   </body>
+
+</html>
